@@ -9,7 +9,7 @@ import { FaDiscord, FaTwitter, FaMoon } from "react-icons/fa";
 import { BsFillSunFill } from "react-icons/bs";
 
 import getConfig from "./config";
-const { networkId } = getConfig("testnet");
+const { networkId } = getConfig("mainnet");
 
 import * as nearAPI from "near-api-js";
 const { utils, connect, providers } = nearAPI;
@@ -290,11 +290,11 @@ export default function App() {
               </p>
               <p className="modal-answer">
                 It's a game that allows users to play Double or Nothing with
-                their NEAR tokens. Odds are 50/50 with a 3% fee.
+                their NEAR tokens. Odds are 50/50 with a 3.5% fee.
               </p>
               <p className="modal-question">How will casino games be?</p>
               <p className="modal-answer">
-                The games in the casino will be 50/50 odds with 3% fee only.
+                The games in the casino will be 50/50 odds with 3.5% fee only.
               </p>
               <p className="modal-question">
                 When will the casino be launched?
