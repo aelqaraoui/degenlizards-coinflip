@@ -70,7 +70,7 @@ const RecentPlays = () => {
         {recentPlays?.map((elm, index) => (
           <li className="elm" key={index}>
             <div>
-              {elm.accountId} flipped {elm.amount} Ⓝ and
+              {elm.accountId} flipped {parseInt(elm.amount / 1000000000000000000000000)} Ⓝ and
               <span className={`outcome ${elm.outcome}`}> {elm.outcome}</span>.
               <div style={{ fontSize: "12px", textAlign: "end" }}>
                 {elm.time}
